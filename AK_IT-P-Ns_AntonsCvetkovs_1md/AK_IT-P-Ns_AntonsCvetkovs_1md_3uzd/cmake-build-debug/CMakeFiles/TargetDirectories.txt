@@ -1,0 +1,3 @@
+C:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug/CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd.dir
+C:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug/CMakeFiles/rebuild_cache.dir

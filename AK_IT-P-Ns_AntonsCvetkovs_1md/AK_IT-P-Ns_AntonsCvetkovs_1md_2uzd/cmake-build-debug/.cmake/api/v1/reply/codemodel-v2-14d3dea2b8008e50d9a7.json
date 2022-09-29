@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AK_IT_P_Ns_AntonsCvetkovs_1md_2uzd",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AK_IT_P_Ns_AntonsCvetkovs_1md_2uzd::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AK_IT_P_Ns_AntonsCvetkovs_1md_2uzd-Debug-243b6e64ff2e77dc4fad.json",
+					"name" : "AK_IT_P_Ns_AntonsCvetkovs_1md_2uzd",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_2uzd/cmake-build-debug",
+		"source" : "C:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_2uzd"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
