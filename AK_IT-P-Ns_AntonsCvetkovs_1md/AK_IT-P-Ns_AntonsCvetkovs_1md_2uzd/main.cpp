@@ -3,106 +3,98 @@
 
 using namespace std;
 
-int randomNumber() { // funkcija, kas izveido un atgriez random skaitli
+int randomNumber() {
     random_device rd;
     mt19937 gen(rd());
-    uniform_int_distribution<> random(0,100); // izveidojam nejausu skaitli diapazona no 0 lidz 100
+    uniform_int_distribution<> random(0,100);
 
-    return random(gen); // funkcija atgriez random skaitli
+    return random(gen);
 }
 
 
 
 string input() {
-    string num; // lietotaja skaitla glabasanai prieks, tika izmantots mainigas ar data tipu string, jo
-                // kad es meginaju uzrakstit algoritmu un mainigaja ar data tipu int bija ievadits float, burti vai
-                // citi simboli, C++ visus burtus parversa par 0 un, piemeram bija ievaditi 5 burti,
-                // tad '0' bija agtriezta  piecas reizes. Ja bija ievadits '0.591.5', tad funkcija 1. reizi atgrieza 0, 2.
-                // izvadija kludu, ka lietotjama jaizmanto veselus skaitlus, 3. izvadija kludu, ka jaievada skaitli
-                // intervala no 0 lidz 100, jo 561 > 100, 4. reizi izvadija kludu, ka lietotjama jaizmanto veselus skaitlus un
-                // 5. reizi atrgrieza 5
+    string num;
 
     cout << "Ievadiet veselo skaitli no 0 lidz 100:";
 
-    cin >> num; // lietotajs ievada skaitli
+    cin >> num;
 
-    return num; // atriezam ievadito vertibu
+    return num;
 }
 
 
 
-int checkInputForSpecialCharacters(string numStr) { // funkcija, kas parbauda vai lietotaja ievadita vertiba ir vesels skaitlis un atgriez to
+int checkInputForSpecialCharacters(string numStr) {
     int i = 0;
 
-    while (i < numStr.length()) { // cikls while, kas tiek izpildits kamer mainigais 'i' < mainiga 'numStr' garumu
-        if (isdigit(numStr[i]) == false) { // if operators, kas parbauda katru simbolu no mainiga 'numStr' vai tas ir cipars
-            cout << "\n!!! Jaievada veselo skaitli intervala no 0 lidz 100 !!!" << endl; // gadijuma, kad netiek ievadits veselais skaitlis, tiek izvadita kluda
-                                                          // un programmaa liek leitotajam ievadit jaunu skaitli
+    while (i < numStr.length()) {
+        if (isdigit(numStr[i]) == false) {
+            cout << "\n!!! Jaievada veselo skaitli intervala no 0 lidz 100 !!!" << endl;
 
-            numStr = input(); // lietotajs ievada jaunu skaitli
+            numStr = input();
 
-            i = 0; // mainiga 'i' vertiba atjaunojas, jo bija ierakstits jauns skaitlis
+            i = 0;
 
-            continue; // partraucam cikla atkartojumu un parejam uz nakamo
+            continue;
         }
 
-        i++; // gadijuma, kad mainigaja 'numStr' simbols ir skaitlis, tad palielinajam mainiga 'i' vertibu pa 1
+        i++;
     }
 
-    int num = stoi(numStr); // parversam mainigo 'numStr' no string uz int un pieskiram to vertibu mainigajam 'num'
+    int num = stoi(numStr);
 
-    return num; // atriezam lietotaja skaitli
+    return num;
 }
 
 
 
-int userNumber() {  // funkcija, kas izvada lietotaja ievadito skaitli
-    int num = checkInputForSpecialCharacters(input()); // parbaudam, vai ievadita vertiba ir veselais skaitlis
+int userNumber() {
+    int num = checkInputForSpecialCharacters(input());
 
-    while (num < 0 || num > 100) { // cikls while, kas izpildisies, kamer mainigas 'num' ir mazaks par 0 vai lielaks par 100
-        cout << "\n!!! Jaievada veselo skaitli intervala no 0 lidz 100 !!!" << endl; // ja ievaditais skaitlis ir mazaks par 0 vai lielaks par 100,
-                                                                                     // tiek izvadita kluda un programma liek lietotajam ievadit jaunu skaitli
+    while (num < 0 || num > 100) {
+        cout << "\n!!! Jaievada veselo skaitli intervala no 0 lidz 100 !!!" << endl;
 
-        num = checkInputForSpecialCharacters(input()); // parbaudam, vai jauna ievadita vertiba ir veselais skaitlis
+        num = checkInputForSpecialCharacters(input());
     }
 
-    return num; // atgriezam lietotaja skaitli
+    return num;
 }
 
 
 
-bool game() { // funkcija, kas parbauda vai lietotajs uzvareja vai zaudeja un atgriez true vai false
-    int random = randomNumber(); // pieskiram mainigajam atgriezto vertibu no funkcijas randomNumber()
+bool game() {
+    int random = randomNumber();
 
-    for (int i = 1; i <= 10; i++) { // cikls for, kas izpildisies 10 reizes
+    for (int i = 1; i <= 10; i++) {
 
-        int user = userNumber(); // pieskiram mainigajam atgriezto vertibu no funkcijas userNumber()
+        int user = userNumber();
 
-        if (user < random) { // operators if, kas parbauda, vai lietotaja skaitlis ir mazaks par random skaitli
+        if (user < random) {
             cout << "\nSkaitlis ir lielaks par ievadito!"  << endl;
-            continue; // parejam uz nakamo cikla atkartojumu
+            continue;
         }
 
-        if (user > random) { // operators if, kas parbauda, vai lietotaja skaitlis ir lielaks par random skaitli
+        if (user > random) {
             cout << "\nSkaitlis ir mazaks par ievadito!"  << endl;
-            continue;  // parejam uz nakamo cikla atkartojumu
+            continue;
         }
 
-        if (user == random) {  // operators if, kas parbauda, vai lietotaja skaitlis ir vienads ar random skaitli
-            cout << "\nJus uzvarejat no " << i << ". meginajuma!"  << endl; // izvadam pazinojumu, ka lietotajs uzvareja
-            return true; // partraucam funkcijas izpildi un atgriezam true vertibu
+        if (user == random) {
+            cout << "\nJus uzvarejat no " << i << ". meginajuma!"  << endl;
+            return true;
         }
     }
 
-    return false; // atgriezam false vertibu
+    return false;
 }
 
 
 
 int main() {
-    bool win = game(); // pieskiram mainigajam atgriezto vertibu no funkcijas game()
+    bool win = game();
 
-    if (!win) { // ja tiek atgriezta false vertiba, tad izvadam pazinojumu, ka lietotajs zaudeja
+    if (!win) {
         cout << "\nJus zaudejat!";
     }
 

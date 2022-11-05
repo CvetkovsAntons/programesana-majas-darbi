@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd
+# Install script for directory: D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

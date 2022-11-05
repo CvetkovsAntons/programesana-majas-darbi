@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug/
+cmake_ninja_workdir = D$:/UNIVERSITATE/PROGRAMMESANA$ 1.$ kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = C$:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1m
 
 build cmake_object_order_depends_target_AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd: phony || CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd.dir
 
-build CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd.dir/main.cpp.obj: CXX_COMPILER__AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd_Debug C$:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/main.cpp || cmake_object_order_depends_target_AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd
+build CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd.dir/main.cpp.obj: CXX_COMPILER__AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd_Debug D$:/UNIVERSITATE/PROGRAMMESANA$ 1.$ kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/main.cpp || cmake_object_order_depends_target_AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd
   DEP_FILE = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++23
   OBJECT_DIR = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd.dir
@@ -81,7 +81,7 @@ build AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd.exe: CXX_EXECUTABLE_LINKER__AK_IT_P_Ns_
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\huj25\CLionProjects\AK_IT-P-Ns_AntonsCvetkovs_1md\AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\UNIVERSITATE\PROGRAMMESANA 1. kurss\programesana-majas-darbi\AK_IT-P-Ns_AntonsCvetkovs_1md\AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\huj25\CLionProjects\AK_IT-P-Ns_AntonsCvetkovs_1md\AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\huj25\CLionProjects\AK_IT-P-Ns_AntonsCvetkovs_1md\AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd -BC:\Users\huj25\CLionProjects\AK_IT-P-Ns_AntonsCvetkovs_1md\AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D "D:\UNIVERSITATE\PROGRAMMESANA 1. kurss\programesana-majas-darbi\AK_IT-P-Ns_AntonsCvetkovs_1md\AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"D:\UNIVERSITATE\PROGRAMMESANA 1. kurss\programesana-majas-darbi\AK_IT-P-Ns_AntonsCvetkovs_1md\AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd" -B"D:\UNIVERSITATE\PROGRAMMESANA 1. kurss\programesana-majas-darbi\AK_IT-P-Ns_AntonsCvetkovs_1md\AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +110,7 @@ build AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd: phony AK_IT_P_Ns_AntonsCvetkovs_1md_3u
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/huj25/CLionProjects/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug
+# Folder: D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_3uzd/cmake-build-debug
 
 build all: phony AK_IT_P_Ns_AntonsCvetkovs_1md_3uzd.exe
 
