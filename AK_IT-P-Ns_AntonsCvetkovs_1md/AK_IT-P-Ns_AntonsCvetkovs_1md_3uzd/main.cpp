@@ -82,6 +82,11 @@ bool game() { // funkcija, kas parbauda vai lietotajs uzvareja vai zaudeja un at
 
         cout << "\nMans skaitlis ir " << random << endl;
 
+        if (random == user) { // operators if, kas parbauda, vai lietotaja skaitlis ir vienads ar datora skaitli
+            cout << "Jus zaudejat! Dators atmineja Jusu skaitli no " << i << ". meginajuma!"  << endl; // izvadam pazinojumu, ka dators uzvareja
+            return false; // partraucam funkcijas izpildi un atgriezam false vertibu
+        }
+
         if (random < user) { // operators if, kas parbauda, vai datora skaitlis ir mazaks par lietotaja skaitli
             cout << "Datora skaitlis ir mazaks par Jusu!"  << endl;
             min = random + 1; // ja datora skaitlis ir mazaks, tad mainigajam min pieskiram mainiga random + 1 vertibu, jo mazaks par so vertibu lietotaja skaitlis nevar but
@@ -92,11 +97,6 @@ bool game() { // funkcija, kas parbauda vai lietotajs uzvareja vai zaudeja un at
             cout << "Datora skaitlis ir lielaks par Jusu!"  << endl;
             max = random - 1; // ja datora skaitlis ir lielaks, tad mainigajam max pieskiram mainiga random - 1 vertibu, jo lielaks par so vertibu lietotaja skaitlis nevar but
             continue;
-        }
-
-        if (random == user) { // operators if, kas parbauda, vai lietotaja skaitlis ir vienads ar datora skaitli
-            cout << "Jus zaudejat! Dators atmineja Jusu skaitli no " << i << ". meginajuma!"  << endl; // izvadam pazinojumu, ka dators uzvareja
-            return false; // partraucam funkcijas izpildi un atgriezam false vertibu
         }
     }
 

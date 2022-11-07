@@ -70,6 +70,11 @@ bool game() {
 
         int user = userNumber();
 
+        if (user == random) {
+            cout << "\nJus uzvarejat no " << i << ". meginajuma!"  << endl;
+            return true;
+        }
+
         if (user < random) {
             cout << "\nSkaitlis ir lielaks par ievadito!"  << endl;
             continue;
@@ -78,11 +83,6 @@ bool game() {
         if (user > random) {
             cout << "\nSkaitlis ir mazaks par ievadito!"  << endl;
             continue;
-        }
-
-        if (user == random) {
-            cout << "\nJus uzvarejat no " << i << ". meginajuma!"  << endl;
-            return true;
         }
     }
 
