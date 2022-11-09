@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.23)
+project(AK_IT_P_Ns_AntonsCvetkovs_3md_2uzd)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(AK_IT_P_Ns_AntonsCvetkovs_3md_2uzd main.cpp Controller/PlayerVsPlayer.cpp Controller/PlayerVsPlayer.h Controller/PlayerVsCpu.cpp Controller/PlayerVsCpu.h)

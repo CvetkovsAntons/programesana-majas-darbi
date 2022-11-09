@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_3md/AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd/cmake-build-debug"
+		},
+		{
+			"name" : "AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_3md/AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -55,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_2md/untitled/cmake-build-debug"
+			"value" : "d:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_3md/AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_2md/untitled"
+			"value" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_3md/AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -851,7 +887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "untitled"
+			"value" : "AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1239,7 +1275,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_2md/untitled/cmake-build-debug"
+			"value" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_3md/AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd/cmake-build-debug"
 		},
 		{
 			"name" : "untitled_IS_TOP_LEVEL",
@@ -1263,7 +1299,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_2md/untitled"
+			"value" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_3md/AK_IT-P-Ns_AntonsCvetkovs_3md_1uzd"
 		}
 	],
 	"kind" : "cache",

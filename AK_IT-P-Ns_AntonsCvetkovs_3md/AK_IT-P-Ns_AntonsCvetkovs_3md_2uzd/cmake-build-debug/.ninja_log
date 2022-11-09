@@ -1,0 +1,8 @@
+# ninja log v5
+1	142	6896459857311695	build.ninja	d925ec870388b44e
+16	172	6896459859191695	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_3md_2uzd.dir/Controller/PlayerVsPlayer.cpp.obj	abf5331dfc9d2483
+0	180	6896459859321711	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_3md_2uzd.dir/Controller/PlayerVsCpu.cpp.obj	ae6df8b4cfcfe1da
+8	628	6896459863801694	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_3md_2uzd.dir/main.cpp.obj	858e60eaeb27230a
+629	763	6896459865121693	AK_IT_P_Ns_AntonsCvetkovs_3md_2uzd.exe	1c30c536d8093e6
+3	582	6896460092037241	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_3md_2uzd.dir/main.cpp.obj	858e60eaeb27230a
+583	687	6896460093057248	AK_IT_P_Ns_AntonsCvetkovs_3md_2uzd.exe	1c30c536d8093e6
