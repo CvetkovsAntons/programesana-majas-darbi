@@ -22,9 +22,13 @@ string input() {
                 // intervala no 0 lidz 100, jo 561 > 100, 4. reizi izvadija kludu, ka lietotjama jaizmanto veselus skaitlus un
                 // 5. reizi atrgrieza 5
 
-    cout << "Ievadiet veselo skaitli no 0 lidz 100:";
+    cout << "Vai datora skaitlis ir pareizs? (ievadiet skaitli no 1-3)" << endl;
+    cout << "1. Ja, datora skaitlis ir pareizs" << endl;
+    cout << "2. Ne, datora skaitls ir mazaks" << endl;
+    cout << "3. Ne, datora skaitlis ir lielaks" << endl;
+    cout << "Atbilde: ";
 
-    cin >> num; // lietotajs ievada skaitli
+    cin >> num;
 
     return num; // atriezam ievadito vertibu
 }
@@ -34,9 +38,9 @@ string input() {
 int checkInputForSpecialCharacters(string numStr) { // funkcija, kas parbauda vai lietotaja ievadita vertiba ir vesels skaitlis un atgriez to
     int i = 0;
 
-    while (i < numStr.length()) { // cikls while, kas tiek izpildits kamer mainigais 'i' < mainiga 'numStr' garumu
+    while (i < numStr.length() || stoi(numStr) < 1 || stoi(numStr) > 3) { // cikls while, kas tiek izpildits kamer mainigais 'i' < mainiga 'numStr' garumu
         if (isdigit(numStr[i]) == false) { // if operators, kas parbauda katru simbolu no mainiga 'numStr' vai tas ir cipars
-            cout << "\n!!! Jaievada veselo skaitli intervala no 0 lidz 100 !!!" << endl; // gadijuma, kad netiek ievadits veselais skaitlis, tiek izvadita kluda
+            cout << "\n!!! Jaievada veselo skaitli intervala no 1 lidz 3 !!!" << endl; // gadijuma, kad netiek ievadits veselais skaitlis, tiek izvadita kluda
                                                                                          // un programmaa liek leitotajam ievadit jaunu skaitli
 
             numStr = input(); // lietotajs ievada jaunu skaitli
@@ -74,27 +78,25 @@ int userNumber() {
 bool game() { // funkcija, kas parbauda vai lietotajs uzvareja vai zaudeja un atgriez true vai false
     int min = 0, max = 100; // mainigie ar data tipu int min un max, kas nosaka datoram, kura diapazona jamekle lietotaja skaitli
 
-    int user = userNumber(); // pieskiram mainigajam atgriezto vertibu no funkcijas userNumber()
-
     for (int i = 1; i <= 10; i++) {  // cikls for, kas izpildisies 10 reizes
 
         int random = randomNumber(min, max); // pieskiram mainigajam atgriezto vertibu no funkcijas randomNumber()
 
-        cout << "\nMans skaitlis ir " << random << endl;
+        cout << "\nDators: 'Mans skaitlis ir' " << random << endl;
 
-        if (random == user) { // operators if, kas parbauda, vai lietotaja skaitlis ir vienads ar datora skaitli
-            cout << "Jus zaudejat! Dators atmineja Jusu skaitli no " << i << ". meginajuma!"  << endl; // izvadam pazinojumu, ka dators uzvareja
+        int user = userNumber();
+
+        if (user == 1) { // operators if, kas parbauda, vai lietotaja skaitlis ir vienads ar datora skaitli
+            cout << "Jus zaudejat! Dators uzmineja skaitli no " << i << " meginajuma!" << endl; // izvadam pazinojumu, ka dators uzvareja
             return false; // partraucam funkcijas izpildi un atgriezam false vertibu
         }
 
-        if (random < user) { // operators if, kas parbauda, vai datora skaitlis ir mazaks par lietotaja skaitli
-            cout << "Datora skaitlis ir mazaks par Jusu!"  << endl;
+        if (user == 2) { // operators if, kas parbauda, vai datora skaitlis ir mazaks par lietotaja skaitli
             min = random + 1; // ja datora skaitlis ir mazaks, tad mainigajam min pieskiram mainiga random + 1 vertibu, jo mazaks par so vertibu lietotaja skaitlis nevar but
             continue;
         }
 
-        if (random > user) { // operators if, kas parbauda, vai datora skaitlis ir lielaks par lietotaja skaitli
-            cout << "Datora skaitlis ir lielaks par Jusu!"  << endl;
+        if (user == 3) { // operators if, kas parbauda, vai datora skaitlis ir lielaks par lietotaja skaitli
             max = random - 1; // ja datora skaitlis ir lielaks, tad mainigajam max pieskiram mainiga random - 1 vertibu, jo lielaks par so vertibu lietotaja skaitlis nevar but
             continue;
         }
