@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AK_IT_P_Ns_AntonsCvetkovs_1md",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AK_IT_P_Ns_AntonsCvetkovs_1md::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AK_IT_P_Ns_AntonsCvetkovs_1md-Debug-e4e0711e2a24dacc58d5.json",
+					"name" : "AK_IT_P_Ns_AntonsCvetkovs_1md",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/2. semestris/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_1uzd/cmake-build-debug",
+		"source" : "D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/2. semestris/AK_IT-P-Ns_AntonsCvetkovs_1md/AK_IT-P-Ns_AntonsCvetkovs_1md_1uzd"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
