@@ -10,6 +10,7 @@ public:
     bool Hit(int);
     void Go(char);
     int GetLife() const;
+    char PlayerMove() const;
     void PrintCharacter();
     ~Character();
 

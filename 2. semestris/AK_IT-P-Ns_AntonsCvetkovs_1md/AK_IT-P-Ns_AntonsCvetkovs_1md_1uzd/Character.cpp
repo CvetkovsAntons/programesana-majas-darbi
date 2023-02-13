@@ -1,3 +1,5 @@
+#include <cstring>
+
 #include "Character.h"
 
 Character::Character(string name, int life) {
@@ -7,12 +9,18 @@ Character::Character(string name, int life) {
 
 bool Character::Hit(int damage) {
     if (Character::life > 0) {
-        Character::life--;
+        if (damage >= Character::life) {
+            Character::life -= Character::life;
+        }
+
+        Character::life -= damage;
 
         if (Character::life > 0) {
             return true;
         }
     }
+
+    Character::~Character();
 
     return false;
 }
@@ -22,6 +30,11 @@ int Character::GetLife() const {
 }
 
 void Character::Go(char direction) {
+    if (direction != 't' && direction != 'r' && direction != 'l' && direction != 'b' && Character::life > 0) {
+        cout << "Move direction is invalid" << endl;
+        return;
+    }
+
     if (Character::life > 0) {
         for (int i = 0; i < 10; i++) {
             if (i != 9) {
@@ -30,7 +43,10 @@ void Character::Go(char direction) {
         }
 
         Character::path[9] = direction;
+        return;
     }
+
+    Character::~Character();
 }
 
 void Character::PrintCharacter() {
