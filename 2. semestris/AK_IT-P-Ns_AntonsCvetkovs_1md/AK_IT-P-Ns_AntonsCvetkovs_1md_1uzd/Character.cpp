@@ -1,52 +1,67 @@
-#include <cstring>
-
 #include "Character.h"
 
+// klases kontruktors
 Character::Character(string name, int life) {
     Character::name = name;
+
+    if (life > 10) { // ja ievadits dzives skaits ir lielaks par 10, tad pieskiram maksimalu vertibu (10)
+        Character::life = 10;
+        return;
+    }
+
+    if (life < 1) { // ja ievadits dzives skaits ir mazaks par 1, tad pieskiram minimalu vertibu (1)
+        Character::life = 1;
+        return;
+    }
+
     Character::life = life;
 }
 
 bool Character::Hit(int damage) {
-    if (Character::life > 0) {
-        if (damage >= Character::life) {
-            Character::life -= Character::life;
+    if (Character::life > 0) { // ja personazs ir dzivs tad atnemam dzives punktus
+        if (damage >= Character::life) { // ja damage ir vienads vai lielaks par personaza dzives skaitu, tad vins ir miris
+            Character::life = 0;
+
+            Character::~Character(); // izvadam pazinojumu, ka personazs ir miris
+
+            return false; // partraucam funkcijas darbu atgriezot false
         }
 
         Character::life -= damage;
 
-        if (Character::life > 0) {
+        if (Character::life > 0) { // ja personazs ir dzivs tad atgriezam true
             return true;
         }
     }
 
-    Character::~Character();
+    Character::~Character(); // izvadam pazinojumu, ka personazs ir miris
 
-    return false;
+    return false; // atgriezam false
 }
 
-int Character::GetLife() const {
+int Character::GetLife() const { // personaza dzives getters
     return Character::life;
 }
 
 void Character::Go(char direction) {
+    // ja tiek ievadits nepareizs kustibas virziens, tad izvadam kludu
     if (direction != 't' && direction != 'r' && direction != 'l' && direction != 'b' && Character::life > 0) {
         cout << "Move direction is invalid" << endl;
-        return;
+        return; // ar return partraucam funkcijas darbu
     }
 
-    if (Character::life > 0) {
-        for (int i = 0; i < 10; i++) {
-            if (i != 9) {
-                Character::path[i] = Character::path[i + 1];
+    if (Character::life > 0) { // nosacijums izpildas, ja personazs ir dzivs
+        for (int i = 0; i < 10; i++) { // cikls for, kas izpildisies 10 reizes
+            if (i != 9) { // ja i nav vienads ar pedeja masiva elementa ideksu, tad
+                Character::path[i] = Character::path[i + 1]; // parnesam vertivas pa kreisis (1. vertiba vieta tiek novietota 2. vertiba, ta vieta 3. vertiba)
             }
         }
 
-        Character::path[9] = direction;
-        return;
+        Character::path[9] = direction; // pieskiram masiva pedejam elementam jaunu vertibu
+        return; // partraucam funkcijas darbu
     }
 
-    Character::~Character();
+    Character::~Character(); // ja personas ir miris, izvadam pazinojumu par to
 }
 
 void Character::PrintCharacter() {
@@ -69,7 +84,5 @@ void Character::PrintCharacter() {
 }
 
 Character::~Character() {
-    if (Character::life < 1) {
-        cout << "Game over for " << Character::name << endl;
-    }
+    cout << "Game over for " << Character::name << endl;
 }

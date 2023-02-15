@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// 1. persoanza tests
 void firsCharacterTest() {
     Character character1("Character 1", 5);
 
@@ -17,7 +18,7 @@ void firsCharacterTest() {
     character1.Hit(1);
     character1.Go('l');
     character1.Hit(1);
-    cout << "Ievadits nepareizs kustibas vieziens" << endl;
+    cout << "Ievadits nepareizs kustibas virziens" << endl;
     character1.Go('a');
     character1.Go('b');
     character1.Hit(1);
@@ -29,8 +30,9 @@ void firsCharacterTest() {
     cout << endl;
 }
 
+// 2. personaza test
 void secondCharacterTest() {
-    Character character2("Character 2", 10);
+    Character character2("Character 2", 12); // max dzives skaits ir 10, ja tiek ievadita lielaka vertiba tad pieskirta vertiba bus 10
 
     character2.PrintCharacter();
 
@@ -57,6 +59,7 @@ void secondCharacterTest() {
     character2.Go('t');
     character2.Hit(1);
     character2.Go('b');
+    cout << "Personazs ir miris" << endl;
     character2.Hit(1);
 
     cout << endl;
