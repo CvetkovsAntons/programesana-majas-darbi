@@ -6,10 +6,10 @@ using namespace std;
 
 class ProximitySensor {
 public:
-    ProximitySensor(string, bool);
+    ProximitySensor(string);
     static bool Scan(int);
     bool GetState() const;
-    bool SetState();
+    void SetState();
     void PrintSensor();
 
 private:
