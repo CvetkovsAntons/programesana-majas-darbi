@@ -18,29 +18,29 @@ Character::Character(string name, int life) {
 }
 
 bool Character::Hit(int damage) {
-    if (Character::life > 0) { // ja personazs ir dzivs tad atnemam dzives punktus
-        if (damage >= Character::life) { // ja damage ir vienads vai lielaks par personaza dzives skaitu, tad vins ir miris
-            Character::life = 0;
+    if (life > 0) { // ja personazs ir dzivs tad atnemam dzives punktus
+        if (damage >= life) { // ja damage ir vienads vai lielaks par personaza dzives skaitu, tad vins ir miris
+            life = 0;
 
-            Character::~Character(); // izvadam pazinojumu, ka personazs ir miris
+            cout << name << " is dead!" << endl; // izvadam pazinojumu, ka personazs ir miris
 
             return false; // partraucam funkcijas darbu atgriezot false
         }
 
-        Character::life -= damage;
+        life -= damage;
 
-        if (Character::life > 0) { // ja personazs ir dzivs tad atgriezam true
+        if (life > 0) { // ja personazs ir dzivs tad atgriezam true
             return true;
         }
     }
 
-    Character::~Character(); // izvadam pazinojumu, ka personazs ir miris
+    cout << name << " is dead!" << endl; // izvadam pazinojumu, ka personazs ir miris
 
     return false; // atgriezam false
 }
 
 int Character::GetLife() const { // personaza dzives getters
-    return Character::life;
+    return life;
 }
 
 void Character::Go(char direction) {
@@ -50,26 +50,26 @@ void Character::Go(char direction) {
         return; // ar return partraucam funkcijas darbu
     }
 
-    if (Character::life > 0) { // nosacijums izpildas, ja personazs ir dzivs
+    if (life > 0) { // nosacijums izpildas, ja personazs ir dzivs
         for (int i = 0; i < 10; i++) { // cikls for, kas izpildisies 10 reizes
             if (i != 9) { // ja i nav vienads ar pedeja masiva elementa ideksu, tad
-                Character::path[i] = Character::path[i + 1]; // parnesam vertivas pa kreisis (1. vertiba vieta tiek novietota 2. vertiba, ta vieta 3. vertiba)
+                path[i] = path[i + 1]; // parnesam vertivas pa kreisis (1. vertiba vieta tiek novietota 2. vertiba, ta vieta 3. vertiba)
             }
         }
 
-        Character::path[9] = direction; // pieskiram masiva pedejam elementam jaunu vertibu
+        path[9] = direction; // pieskiram masiva pedejam elementam jaunu vertibu
         return; // partraucam funkcijas darbu
     }
 
-    Character::~Character(); // ja personas ir miris, izvadam pazinojumu par to
+    cout << name << " is dead!" << endl; // ja personas ir miris, izvadam pazinojumu par to
 }
 
 void Character::PrintCharacter() {
-    cout << "Name: " << Character::name <<endl;
+    cout << "Name: " << name <<endl;
 
-    if (Character::life > 0) {
+    if (life > 0) {
         cout << "Status: Alive" << endl;
-        cout << "Health: " << Character::life << endl;
+        cout << "Health: " << life << endl;
     } else {
         cout << "Status: Dead" << endl;
     }
@@ -77,12 +77,12 @@ void Character::PrintCharacter() {
     cout << "Last 10 turns: ";
 
     for (int i = 0; i < 10; i++) {
-        cout << Character::path[i] << " ";
+        cout << path[i] << " ";
     }
 
     cout << endl;
 }
 
 Character::~Character() {
-    cout << "Game over for " << Character::name << endl;
+    cout << "Game over for " << name << endl;
 }

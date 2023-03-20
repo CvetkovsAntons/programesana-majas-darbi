@@ -18,7 +18,7 @@ void firsCharacterTest() {
     character1.Hit(1);
     character1.Go('l');
     character1.Hit(1);
-    cout << "Ievadits nepareizs kustibas virziens" << endl;
+    cout << "Ja tiek ievadits nepareizs kustibas virziens" << endl;
     character1.Go('a');
     character1.Go('b');
     character1.Hit(1);
@@ -59,7 +59,7 @@ void secondCharacterTest() {
     character2.Go('t');
     character2.Hit(1);
     character2.Go('b');
-    cout << "Personazs ir miris" << endl;
+    cout << "Kad personazs ir miris personazs ir miris" << endl;
     character2.Hit(1);
 
     cout << endl;
