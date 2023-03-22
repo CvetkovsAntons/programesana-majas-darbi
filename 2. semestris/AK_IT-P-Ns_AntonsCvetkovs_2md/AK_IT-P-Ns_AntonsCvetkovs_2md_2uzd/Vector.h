@@ -2,7 +2,6 @@
 #define AK_IT_P_NS_ANTONSCVETKOVS_2MD_2UZD_VECTOR_H
 
 #include "iostream"
-#include "Array.h"
 
 using namespace std;
 
@@ -12,6 +11,7 @@ class Vector {
 
 public:
     Vector(double = 0, double = 0, double = 0, double = 0, double = 0, double = 0);
+    ~Vector();
     Vector &operator=(const Vector &);
     Vector operator+(const Vector &) const;
     const Vector operator-(const Vector &) const;
@@ -22,9 +22,10 @@ public:
     bool operator<=(const Vector &) const;
     bool operator==(const Vector &) const;
     bool operator!=(const Vector &) const;
+    double getMagnitude() const;
 
 private:
-    Array vector;
+    double* coordinates = new double[6];
 };
 
 #endif //AK_IT_P_NS_ANTONSCVETKOVS_2MD_2UZD_VECTOR_H

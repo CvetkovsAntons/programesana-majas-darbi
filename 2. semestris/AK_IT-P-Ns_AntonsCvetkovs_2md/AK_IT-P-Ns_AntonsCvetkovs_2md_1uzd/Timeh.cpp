@@ -1,7 +1,7 @@
 #include "Time.h"
 
 Time::Time(int h, int m, int s) {
-    hours = (h>=0 && h <24) ? h : 0;
+    hours = (h>=0 && h <24) ? h : 0; // ja ir noradits nepareizs laiks, tad peiskiram 0
     minutes = (m>=0 && m<60) ? m : 0;
     seconds = (s>=0 && s<60) ? s : 0;
 }
@@ -74,9 +74,7 @@ istream& operator>>(istream& input, Time& obj) {
 
 
 Time& Time::operator=(const Time& right) {
-    if (hours == right.hours &&
-        minutes == right.minutes &&
-        seconds == right.seconds) {
+    if (*this == right) {
         return *this;
     }
 
@@ -88,22 +86,6 @@ Time& Time::operator=(const Time& right) {
 }
 
 Time Time::operator++() {
-    if (minutes == 59) {
-        if (hours == 23) {
-            hours = 0;
-        } else {
-            hours++;
-        }
-
-        minutes = 0;
-    } else {
-        minutes++;
-    }
-
-    return *this;
-}
-
-Time Time::operator++(int) {
     if (seconds == 59) {
         if (minutes == 59) {
             if (hours == 23) {
@@ -125,23 +107,24 @@ Time Time::operator++(int) {
     return *this;
 }
 
-Time Time::operator--() {
-    if (minutes == 0) {
-        if (hours == 0) {
-            hours = 23;
+Time Time::operator++(int) {
+    if (minutes == 59) {
+        if (hours == 23) {
+            hours = 0;
         } else {
-            hours--;
+            hours++;
         }
 
-        minutes = 59;
+        minutes = 0;
     } else {
-        minutes--;
+        minutes++;
     }
 
     return *this;
+
 }
 
-Time Time::operator--(int) {
+Time Time::operator--() {
     if (seconds == 0) {
         if (minutes == 0) {
             if (hours == 0) {
@@ -158,6 +141,22 @@ Time Time::operator--(int) {
         seconds = 59;
     } else {
         seconds--;
+    }
+
+    return *this;
+}
+
+Time Time::operator--(int) {
+    if (minutes == 0) {
+        if (hours == 0) {
+            hours = 23;
+        } else {
+            hours--;
+        }
+
+        minutes = 59;
+    } else {
+        minutes--;
     }
 
     return *this;
@@ -182,7 +181,7 @@ bool Time::operator>(const Time &right) const {
 }
 
 bool Time::operator<(const Time &right) const {
-    return !(*this >= right);
+    return !(*this > right);
 }
 
 bool Time::operator>=(const Time &right) const {
