@@ -1,9 +1,9 @@
 # ninja log v5
-607	708	7012025735962451	AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.exe	9cf764bc2ae6c4c8
+643	753	7012033688574164	AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.exe	e524f09436c38e23
 14	906	7010300042263564	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.dir/Arrayh.cpp.obj	eca47c70355f129b
-2	1011	7012017714208168	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.dir/main.cpp.obj	24ffd30d4960913b
-3	607	7012025734992453	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.dir/Vectorh.cpp.obj	cd8f684ae96ffc00
-1	334	7012033680824181	build.ninja	93d476e4f9154926
 3	558	7012033686634182	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.dir/main.cpp.obj	24ffd30d4960913b
 6	643	7012033687494163	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.dir/Vectorh.cpp.obj	cd8f684ae96ffc00
-643	753	7012033688574164	AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.exe	e524f09436c38e23
+1	334	7012119856063541	build.ninja	93d476e4f9154926
+2	679	7013674972978440	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.dir/main.cpp.obj	24ffd30d4960913b
+18	740	7013674973598441	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.dir/Vectorh.cpp.obj	cd8f684ae96ffc00
+741	922	7013674975388561	AK_IT_P_Ns_AntonsCvetkovs_2md_2uzd.exe	e524f09436c38e23

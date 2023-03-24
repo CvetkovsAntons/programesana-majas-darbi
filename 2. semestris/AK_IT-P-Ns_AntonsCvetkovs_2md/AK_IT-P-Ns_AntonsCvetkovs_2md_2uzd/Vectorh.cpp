@@ -64,6 +64,10 @@ double Vector::getMagnitude() const {
 }
 
 Vector &Vector::operator=(const Vector &right) {
+    if (*this == right) {
+        return *this;
+    }
+
     for (int i = 0; i < sizeof(coordinates); i++) {
         coordinates[i] = right.coordinates[i];
     }
