@@ -1,12 +1,12 @@
 #include "Time.h"
 
 Time::Time(int h, int m, int s) {
-    hours = (h>=0 && h <24) ? h : 0; // ja ir noradits nepareizs laiks, tad peiskiram 0
-    minutes = (m>=0 && m<60) ? m : 0;
-    seconds = (s>=0 && s<60) ? s : 0;
+    Time::hours = (h>=0 && h <24) ? h : 0; // ja ir noradits nepareizs laiks, tad peiskiram 0
+    Time::minutes = (m>=0 && m<60) ? m : 0;
+    Time::seconds = (s>=0 && s<60) ? s : 0;
 }
 
-ostream& operator<<(ostream& output, const Time& obj) {
+ostream &operator<<(ostream &output, const Time &obj) {
     output
             << (obj.hours < 10 ? "0" : "") << obj.hours << ":"
             << (obj.minutes < 10 ? "0" : "") << obj.minutes << ":"
@@ -17,7 +17,7 @@ ostream& operator<<(ostream& output, const Time& obj) {
     return output;
 }
 
-istream& operator>>(istream& input, Time& obj) {
+istream&operator>>(istream &input, Time &obj) {
     string inputH, inputM, inputS;
 
     cout << "Enter hours: ";
@@ -73,51 +73,51 @@ istream& operator>>(istream& input, Time& obj) {
 }
 
 
-Time& Time::operator=(const Time& right) {
+Time& Time::operator=(const Time &right) {
     if (*this == right) {
         return *this;
     }
 
-    hours = right.hours;
-    minutes = right.minutes;
-    seconds = right.seconds;
+    Time::hours = right.hours;
+    Time::minutes = right.minutes;
+    Time::seconds = right.seconds;
 
     return *this;
 }
 
 Time Time::operator++() {
-    if (seconds == 59) {
-        if (minutes == 59) {
-            if (hours == 23) {
-                hours = 0;
+    if (Time::seconds == 59) {
+        if (Time::minutes == 59) {
+            if (Time::hours == 23) {
+                Time::hours = 0;
             } else {
-                hours++;
+                Time::hours++;
             }
 
-            minutes = 0;
+            Time::minutes = 0;
         } else {
-            minutes++;
+            Time::minutes++;
         }
 
-        seconds = 0;
+        Time::seconds = 0;
     } else {
-        seconds++;
+        Time::seconds++;
     }
 
     return *this;
 }
 
 Time Time::operator++(int) {
-    if (minutes == 59) {
-        if (hours == 23) {
-            hours = 0;
+    if (Time::minutes == 59) {
+        if (Time::hours == 23) {
+            Time::hours = 0;
         } else {
-            hours++;
+            Time::hours++;
         }
 
-        minutes = 0;
+        Time::minutes = 0;
     } else {
-        minutes++;
+        Time::minutes++;
     }
 
     return *this;
@@ -125,54 +125,54 @@ Time Time::operator++(int) {
 }
 
 Time Time::operator--() {
-    if (seconds == 0) {
-        if (minutes == 0) {
-            if (hours == 0) {
-                hours = 23;
+    if (Time::seconds == 0) {
+        if (Time::minutes == 0) {
+            if (Time::hours == 0) {
+                Time::hours = 23;
             } else {
-                hours--;
+                Time::hours--;
             }
 
-            minutes = 59;
+            Time::minutes = 59;
         } else {
-            minutes--;
+            Time::minutes--;
         }
 
-        seconds = 59;
+        Time::seconds = 59;
     } else {
-        seconds--;
+        Time::seconds--;
     }
 
     return *this;
 }
 
 Time Time::operator--(int) {
-    if (minutes == 0) {
-        if (hours == 0) {
-            hours = 23;
+    if (Time::minutes == 0) {
+        if (Time::hours == 0) {
+            Time::hours = 23;
         } else {
-            hours--;
+            Time::hours--;
         }
 
-        minutes = 59;
+        Time::minutes = 59;
     } else {
-        minutes--;
+        Time::minutes--;
     }
 
     return *this;
 }
 
 bool Time::operator>(const Time &right) const {
-    if (hours > right.hours) {
+    if (Time::hours > right.hours) {
         return true;
     }
 
-    if (hours == right.hours) {
-        if (minutes > right.minutes) {
+    if (Time::hours == right.hours) {
+        if (Time::minutes > right.minutes) {
             return true;
         }
 
-        if (minutes == right.minutes && seconds > right.seconds) {
+        if (Time::minutes == right.minutes && Time::seconds > right.seconds) {
             return true;
         }
     }
@@ -201,9 +201,9 @@ bool Time::operator<=(const Time &right) const {
 }
 
 bool Time::operator==(const Time &right) const {
-    if (hours == right.hours &&
-        minutes == right.minutes &&
-        seconds == right.seconds) {
+    if (Time::hours == right.hours &&
+        Time::minutes == right.minutes &&
+        Time::seconds == right.seconds) {
         return true;
     }
 

@@ -59,7 +59,7 @@ void secondCharacterTest() {
     character2.Go('t');
     character2.Hit(1);
     character2.Go('b');
-    cout << "Kad personazs ir miris personazs ir miris" << endl;
+    cout << "Kad personazs ir miris" << endl;
     character2.Hit(1);
 
     cout << endl;

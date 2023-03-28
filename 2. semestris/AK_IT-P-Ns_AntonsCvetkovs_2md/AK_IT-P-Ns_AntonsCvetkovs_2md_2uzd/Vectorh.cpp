@@ -2,16 +2,16 @@
 #include "cmath"
 // konstruktors pieskir parmetru vertibas masiva
 Vector::Vector(double x1, double y1, double z1, double x2, double y2, double z2) {
-    coordinates[0] = x1;
-    coordinates[1] = y1;
-    coordinates[2] = z1;
-    coordinates[3] = x2;
-    coordinates[4] = y2;
-    coordinates[5] = z2;
+    Vector::coordinates[0] = x1;
+    Vector::coordinates[1] = y1;
+    Vector::coordinates[2] = z1;
+    Vector::coordinates[3] = x2;
+    Vector::coordinates[4] = y2;
+    Vector::coordinates[5] = z2;
 }
 
 Vector::~Vector() { // destruktors deallocate masivu
-    delete [] coordinates;
+    delete [] Vector::coordinates;
 }
 
 ostream &operator<<(ostream &output, const Vector &obj) {
@@ -58,9 +58,9 @@ istream &operator>>(istream &input, Vector &obj) {
 // dabujam vektora magnitudu pec formulas sqrt(a^2+b^2+c^2)
 // a = x2 - x1, b = y2 - y1, c = z2 - z1
 double Vector::getMagnitude() const {
-    return sqrt(pow(coordinates[3] - coordinates[0], 2) +
-            pow(coordinates[4] - coordinates[1], 2) +
-            pow(coordinates[5] - coordinates[2], 2));
+    return sqrt(pow(Vector::coordinates[3] - Vector::coordinates[0], 2) +
+            pow(Vector::coordinates[4] - Vector::coordinates[1], 2) +
+            pow(Vector::coordinates[5] - Vector::coordinates[2], 2));
 }
 
 Vector &Vector::operator=(const Vector &right) {
@@ -68,8 +68,8 @@ Vector &Vector::operator=(const Vector &right) {
         return *this;
     }
 
-    for (int i = 0; i < sizeof(coordinates); i++) {
-        coordinates[i] = right.coordinates[i];
+    for (int i = 0; i < sizeof(Vector::coordinates); i++) {
+        Vector::coordinates[i] = right.coordinates[i];
     }
 
     return *this;
@@ -77,34 +77,34 @@ Vector &Vector::operator=(const Vector &right) {
 
 Vector Vector::operator+(const Vector &right) const {
     return Vector(
-            coordinates[0] + right.coordinates[0],
-            coordinates[1] + right.coordinates[1],
-            coordinates[2] + right.coordinates[2],
-            coordinates[3] + right.coordinates[3],
-            coordinates[4] + right.coordinates[4],
-            coordinates[5] + right.coordinates[5]
+            Vector::coordinates[0] + right.coordinates[0],
+            Vector::coordinates[1] + right.coordinates[1],
+            Vector::coordinates[2] + right.coordinates[2],
+            Vector::coordinates[3] + right.coordinates[3],
+            Vector::coordinates[4] + right.coordinates[4],
+            Vector::coordinates[5] + right.coordinates[5]
     );
 }
 
 const Vector Vector::operator-(const Vector &right) const {
     return Vector(
-            coordinates[0] - right.coordinates[0],
-            coordinates[1] - right.coordinates[1],
-            coordinates[2] - right.coordinates[2],
-            coordinates[3] - right.coordinates[3],
-            coordinates[4] - right.coordinates[4],
-            coordinates[5] - right.coordinates[5]
+            Vector::coordinates[0] - right.coordinates[0],
+            Vector::coordinates[1] - right.coordinates[1],
+            Vector::coordinates[2] - right.coordinates[2],
+            Vector::coordinates[3] - right.coordinates[3],
+            Vector::coordinates[4] - right.coordinates[4],
+            Vector::coordinates[5] - right.coordinates[5]
     );
 }
 
 const Vector Vector::operator*(const Vector &right) const {
     return Vector(
-            coordinates[1] * right.coordinates[2] - coordinates[2] * right.coordinates[1],
-            coordinates[2] * right.coordinates[0] - coordinates[0] * right.coordinates[2],
-            coordinates[0] * right.coordinates[1] - coordinates[1] * right.coordinates[0],
-            coordinates[4] * right.coordinates[5] - coordinates[5] * right.coordinates[4],
-            coordinates[5] * right.coordinates[3] - coordinates[3] * right.coordinates[5],
-            coordinates[3] * right.coordinates[4] - coordinates[4] * right.coordinates[3]
+            Vector::coordinates[1] * right.coordinates[2] - Vector::coordinates[2] * right.coordinates[1],
+            Vector::coordinates[2] * right.coordinates[0] - Vector::coordinates[0] * right.coordinates[2],
+            Vector::coordinates[0] * right.coordinates[1] - Vector::coordinates[1] * right.coordinates[0],
+            Vector::coordinates[4] * right.coordinates[5] - Vector::coordinates[5] * right.coordinates[4],
+            Vector::coordinates[5] * right.coordinates[3] - Vector::coordinates[3] * right.coordinates[5],
+            Vector::coordinates[3] * right.coordinates[4] - Vector::coordinates[4] * right.coordinates[3]
     );
 }
 
