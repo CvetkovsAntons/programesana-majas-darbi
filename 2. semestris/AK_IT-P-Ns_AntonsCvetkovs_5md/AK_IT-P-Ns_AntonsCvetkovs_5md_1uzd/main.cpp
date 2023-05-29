@@ -22,7 +22,7 @@ int main() {
     }
 
     for (int i = 0; i < randomNumber(1, sizeOfQueueFloat); i++) {
-        float randomFloat = randomNumber(1.0f, 10.0f);
+        float randomFloat = randomNumber(1.0f, 100.0f);
         queueFloat.enqueue(randomFloat);
     }
 
@@ -67,19 +67,19 @@ int main() {
 
     cout << "\n==========================================" << endl;
 
-    cout << "\nQueueINT append values" << endl;
+    cout << "\nQueueINT appending values" << endl;
     random = ((queueInt.getSize() - queueInt.getIndex()) == 0) ? 0 : randomNumber(1, queueInt.getSize() - queueInt.getIndex());
     for (int i = 0; i < random; i++) {
         queueInt.enqueue(randomNumber(1, 100));
     }
 
-    cout << "\nQueueFLOAT append values" << endl;
+    cout << "\nQueueFLOAT appending values" << endl;
     random = ((queueFloat.getSize() - queueFloat.getIndex()) == 0) ? 0 : randomNumber(1, queueFloat.getSize() - queueFloat.getIndex());
     for (int i = 0; i < random; i++) {
         queueFloat.enqueue(randomNumber(1.0f, 100.0f));
     }
-    
-    cout << "\nQueueCHAR append values" << endl;
+
+    cout << "\nQueueCHAR appending values" << endl;
     random = ((queueChar.getSize() - queueChar.getIndex()) == 0) ? 0 : randomNumber(1, queueChar.getSize() - queueChar.getIndex());
     for (int i = 0; i < random; i++) {
         queueChar.enqueue(static_cast<char>(randomNumber(32, 126)));
