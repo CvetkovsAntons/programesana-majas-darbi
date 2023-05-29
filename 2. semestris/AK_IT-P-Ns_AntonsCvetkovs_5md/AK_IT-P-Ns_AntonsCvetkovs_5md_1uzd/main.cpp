@@ -17,16 +17,16 @@ int main() {
     Queue<char> queueChar(sizeOfQueueChar);
 
     // aizpildu visus masivus ar random elementu skaitu
-    for (int i = 0; i < randomNumber(3, sizeOfQueueInt); i++) {
+    for (int i = 0; i < randomNumber(1, sizeOfQueueInt); i++) {
         queueInt.enqueue(randomNumber(1, 100));
     }
 
-    for (int i = 0; i < randomNumber(3, sizeOfQueueFloat); i++) {
+    for (int i = 0; i < randomNumber(1, sizeOfQueueFloat); i++) {
         float randomFloat = randomNumber(1.0f, 10.0f);
         queueFloat.enqueue(randomFloat);
     }
 
-    for (int i = 0; i < randomNumber(3, sizeOfQueueChar); i++) {
+    for (int i = 0; i < randomNumber(1, sizeOfQueueChar); i++) {
         queueChar.enqueue(static_cast<char>(randomNumber(32, 126)));
     }
 
@@ -36,6 +36,8 @@ int main() {
     queueFloat.PrintQueue();
     cout << "\nQueueChar after creation" << endl;
     queueChar.PrintQueue();
+
+    cout << "\n==========================================" << endl;
 
     // nonemu no visim masiviem random elementu skaitu
     cout << "\nQueueINT removed values: " << endl;
@@ -63,21 +65,23 @@ int main() {
     cout << "\nQueueChar after removing values" << endl;
     queueChar.PrintQueue();
 
+    cout << "\n==========================================" << endl;
+
     cout << "\nQueueINT append values" << endl;
-    random = ((queueInt.getSize() - queueInt.getIndex()) == 0) ? 0 : randomNumber(1, queueInt.getSize() -  queueInt.getIndex());
+    random = ((queueInt.getSize() - queueInt.getIndex()) == 0) ? 0 : randomNumber(1, queueInt.getSize() - queueInt.getIndex());
     for (int i = 0; i < random; i++) {
         queueInt.enqueue(randomNumber(1, 100));
     }
 
     cout << "\nQueueFLOAT append values" << endl;
-    random = ((queueFloat.getSize() - queueFloat.getIndex()) == 0) ? 0 : randomNumber(1, queueFloat.getSize() -  queueFloat.getIndex());
+    random = ((queueFloat.getSize() - queueFloat.getIndex()) == 0) ? 0 : randomNumber(1, queueFloat.getSize() - queueFloat.getIndex());
     for (int i = 0; i < random; i++) {
         queueFloat.enqueue(randomNumber(1.0f, 100.0f));
     }
 
 
     cout << "\nQueueCHAR append values" << endl;
-    random = ((queueChar.getSize() - queueChar.getIndex()) == 0) ? 0 : randomNumber(1, queueChar.getSize() -  queueChar.getIndex());
+    random = ((queueChar.getSize() - queueChar.getIndex()) == 0) ? 0 : randomNumber(1, queueChar.getSize() - queueChar.getIndex());
     for (int i = 0; i < random; i++) {
         queueChar.enqueue(static_cast<char>(randomNumber(32, 126)));
     }
