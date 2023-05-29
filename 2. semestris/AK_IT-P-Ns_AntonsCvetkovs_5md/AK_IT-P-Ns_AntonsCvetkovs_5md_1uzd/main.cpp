@@ -78,8 +78,7 @@ int main() {
     for (int i = 0; i < random; i++) {
         queueFloat.enqueue(randomNumber(1.0f, 100.0f));
     }
-
-
+    
     cout << "\nQueueCHAR append values" << endl;
     random = ((queueChar.getSize() - queueChar.getIndex()) == 0) ? 0 : randomNumber(1, queueChar.getSize() - queueChar.getIndex());
     for (int i = 0; i < random; i++) {
