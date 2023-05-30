@@ -52,16 +52,8 @@ Type Queue<Type>::dequeue() {
 
 template<class Type>
 void Queue<Type>::PrintQueue() {
-    if (is_same<Type, char>::value) { // parbaudu vai Type ir char, lai izprintet char, nevis int vertibu
-        for (int i = 0; i < Queue<Type>::index; i++) {
-            cout << "Queue[" << i << "] => " << static_cast<char>(Queue<Type>::queue[i]) << endl;
-        }
-
-        return;
-    }
-
     for (int i = 0; i < Queue<Type>::index; i++) {
-        cout << "Queue[" << i << "] => " << Queue<Type>::queue[i] << endl;
+        Queue<Type>::queue[i].printHuman();
     }
 }
 

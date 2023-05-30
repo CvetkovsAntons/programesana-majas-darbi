@@ -1,0 +1,27 @@
+# ninja log v5
+17	583	7071263446212343	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Queueh.cpp.obj	4984f0fb5a8f910c
+0	596	7071263446382334	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+9	786	7071263448292349	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Helpersh.cpp.obj	b64ba57ceda3ac71
+787	908	7071263449472341	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	cc948706c25b2877
+3	959	7071690760666561	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+23	970	7071690760846559	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Queueh.cpp.obj	4984f0fb5a8f910c
+32	1098	7071690762136559	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Humanh.cpp.obj	af96fccbd1f32504
+1098	1334	7071690764466559	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
+3	596	7071691072069494	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Humanh.cpp.obj	af96fccbd1f32504
+597	711	7071691073199493	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
+3	584	7071691188124462	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+584	750	7071691189694451	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
+3	613	7071692114940687	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+613	722	7071692116010684	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
+3	827	7071693374809791	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+828	961	7071693376119809	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
+6	638	7071694433144801	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Queueh.cpp.obj	4984f0fb5a8f910c
+2	765	7071694434454785	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+765	877	7071694435534791	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
+3	718	7071695367274953	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+718	857	7071695368624948	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
+2	671	7071695737333243	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+671	774	7071695738333222	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
+3	671	7071696811432561	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj	3af57fc1d7a696e6
+7	671	7071696811442562	CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Humanh.cpp.obj	af96fccbd1f32504
+672	791	7071696812602556	AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe	53e9b2c62247bdc1
