@@ -27,7 +27,7 @@ int main() {
     }
 
     for (int i = 0; i < randomNumber(1, sizeOfQueueChar); i++) {
-        queueChar.enqueue(static_cast<char>(randomNumber(32, 126)));
+        queueChar.enqueue(static_cast<char>(randomNumber(32, 126))); // panemu vertibas no 32 lidz 126, lai neizvadit non-printable chars
     }
 
     cout << "QueueINT after creation" << endl;
