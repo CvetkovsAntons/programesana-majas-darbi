@@ -2,7 +2,7 @@
 
 Human::Human() {}
 
-Human::Human(string n, string s, int a) {
+Human::Human(const string& n, const string& s, int a) {
     Human::name = (n.length() > 0) ? n : "Name";
     Human::surname = (s.length() > 0) ? s : "Surname";
     Human::age = (a >= 0) ? a : 0;

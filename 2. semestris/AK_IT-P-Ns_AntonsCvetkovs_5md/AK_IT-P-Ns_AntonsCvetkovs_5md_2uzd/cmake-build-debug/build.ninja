@@ -61,12 +61,6 @@ build CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Queueh.cpp.obj: CXX_COMP
   OBJECT_DIR = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir
   OBJECT_FILE_DIR = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir
 
-build CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Helpersh.cpp.obj: CXX_COMPILER__AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd_Debug D$:/UNIVERSITATE/PROGRAMMESANA$ 1.$ kurss/programesana-majas-darbi/2.$ semestris/AK_IT-P-Ns_AntonsCvetkovs_5md/AK_IT-P-Ns_AntonsCvetkovs_5md_2uzd/Helpersh.cpp || cmake_object_order_depends_target_AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd
-  DEP_FILE = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir\Helpersh.cpp.obj.d
-  FLAGS = -g -std=gnu++23
-  OBJECT_DIR = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir
-  OBJECT_FILE_DIR = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir
-
 build CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Humanh.cpp.obj: CXX_COMPILER__AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd_Debug D$:/UNIVERSITATE/PROGRAMMESANA$ 1.$ kurss/programesana-majas-darbi/2.$ semestris/AK_IT-P-Ns_AntonsCvetkovs_5md/AK_IT-P-Ns_AntonsCvetkovs_5md_2uzd/Humanh.cpp || cmake_object_order_depends_target_AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd
   DEP_FILE = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir\Humanh.cpp.obj.d
   FLAGS = -g -std=gnu++23
@@ -81,7 +75,7 @@ build CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Humanh.cpp.obj: CXX_COMP
 #############################################
 # Link the executable AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe
 
-build AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe: CXX_EXECUTABLE_LINKER__AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd_Debug CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Queueh.cpp.obj CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Helpersh.cpp.obj CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Humanh.cpp.obj
+build AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.exe: CXX_EXECUTABLE_LINKER__AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd_Debug CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/main.cpp.obj CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Queueh.cpp.obj CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir/Humanh.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\AK_IT_P_Ns_AntonsCvetkovs_5md_2uzd.dir

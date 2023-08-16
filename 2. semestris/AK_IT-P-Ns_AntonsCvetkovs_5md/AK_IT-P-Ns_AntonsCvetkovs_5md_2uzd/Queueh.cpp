@@ -1,4 +1,5 @@
 #include "Queue.h"
+#include "Human.h"
 
 template <class Type>
 Queue<Type>::Queue(int s) { // daleji panemts no jusu piemera :)

@@ -7,7 +7,7 @@ using namespace std;
 class Human {
 public:
     Human();
-    Human(string, string, int);
+    Human(const string&, const string&, int);
     void printHuman();
 
 private:
