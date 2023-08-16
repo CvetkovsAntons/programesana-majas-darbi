@@ -102,7 +102,7 @@ namespace AK_IT_P_Ns_AntonsCvetkovs_1md
 
         private void PlusMinusBtn_Click(object sender, EventArgs e)
         {
-            if (!this.isResult(ResultTextBox.Text))
+            if (!this.isResult(ResultTextBox.Text) && ResultTextBox.Text != "0")
             {
                 if (ResultTextBox.Text.Contains("-"))
                 {
