@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AK_IT-P-Ns_AntonsCvetkovs_1md/1.0.0": {
+        "runtime": {
+          "AK_IT-P-Ns_AntonsCvetkovs_1md.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AK_IT-P-Ns_AntonsCvetkovs_1md/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
