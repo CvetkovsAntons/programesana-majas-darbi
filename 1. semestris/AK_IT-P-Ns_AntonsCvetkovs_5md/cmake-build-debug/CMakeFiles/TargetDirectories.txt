@@ -1,3 +1,3 @@
-D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_5md/cmake-build-debug/CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md.dir
-D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_5md/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/AK_IT-P-Ns_AntonsCvetkovs_5md/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/1. semestris/AK_IT-P-Ns_AntonsCvetkovs_5md/cmake-build-debug/CMakeFiles/AK_IT_P_Ns_AntonsCvetkovs_5md.dir
+D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/1. semestris/AK_IT-P-Ns_AntonsCvetkovs_5md/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/UNIVERSITATE/PROGRAMMESANA 1. kurss/programesana-majas-darbi/1. semestris/AK_IT-P-Ns_AntonsCvetkovs_5md/cmake-build-debug/CMakeFiles/rebuild_cache.dir

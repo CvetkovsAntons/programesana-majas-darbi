@@ -51,7 +51,7 @@ namespace AK_IT_P_Ns_AntonsCvetkovs_1md
 
         private void CalculatorForm_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Back) BackspaceBtn.PerformClick();
+            if (e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete) BackspaceBtn.PerformClick();
             else if (e.KeyCode == Keys.Add || (e.Shift && e.KeyCode == Keys.Oemplus)) PlusBtn.PerformClick();
             else if (e.KeyCode == Keys.Multiply || (e.Shift && e.KeyCode == Keys.D8)) MultiplyBtn.PerformClick();
             else if (e.KeyCode == Keys.Subtract || (e.Shift && e.KeyCode == Keys.OemMinus)) MinusBtn.PerformClick();
@@ -102,7 +102,7 @@ namespace AK_IT_P_Ns_AntonsCvetkovs_1md
 
         private void PlusMinusBtn_Click(object sender, EventArgs e)
         {
-            if (!this.isResult(ResultTextBox.Text) && ResultTextBox.Text != "0")
+            if (!this.isResult(ResultTextBox.Text) && (double.Parse(ResultTextBox.Text) > 0 || double.Parse(ResultTextBox.Text) < 0))
             {
                 if (ResultTextBox.Text.Contains("-"))
                 {
